@@ -11,10 +11,14 @@
     <img src="http://lorempixel.com/400/200"> -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script>
-        const Title = React.createElement('div', {
-            className: 'title'
-        },'React Tutorials');
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // const Title = React.createElement('div', {
+        //     className: 'title'
+        // },'React Tutorials');
+
+        const Title = <div className="title">React Tutorials</div>
+
         const Img = React.createElement('img', {
             src: 'http://lorempixel.com/400/200'
         },null)
